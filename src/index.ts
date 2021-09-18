@@ -38,6 +38,46 @@ employee = [
 ]
 
 
+//union
+
+let pid: number | string = 22
+
+
+//enum
+
+enum direction1
+{
+	up=1,
+	down,
+	left,
+	right,
+}
+
+
+console.log(direction1.up)
+
+
+//objects
+
+type User={
+	id :number
+	name: string
+
+}
+
+const user: User {
+	id:1,
+	name:'ruba',
+}
+
+
+
+//type assertion
+
+
+let cid: any = 1
+
+let customerId = cid as number
 
 
 
