@@ -79,5 +79,10 @@ let cid: any = 1
 
 let customerId = cid as number
 
+//functons
 
+
+function addNumber(x:number,y:number):number{
+	return x+y
+}
 
