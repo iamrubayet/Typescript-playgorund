@@ -145,3 +145,32 @@ class Person implements PersonInterface{
 
 const brad = new Person(1,'brad')
 
+
+
+
+//subclasses 
+
+
+
+class Employee extends Person{
+	position:string
+
+
+	constructor(id:number,name:string,position:string)
+	{
+		super(id,name)
+		this.position = position
+
+	}
+}
+
+const emp = new Employee(3,"shawn",'developer')
+
+
+
+//generics
+
+
+
+
+
