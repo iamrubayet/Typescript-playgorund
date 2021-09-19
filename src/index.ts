@@ -86,3 +86,27 @@ function addNumber(x:number,y:number):number{
 	return x+y
 }
 
+//interface
+
+interface UserInterface{
+	readonly id :number
+	name: string
+	age? : 15
+
+}
+
+const user1: UserInterface {
+	id:1,
+	name:'ruba',
+}
+
+//interface with functions
+interface MathFunc()
+{
+	(x:number,y:number):number
+}
+
+
+
+const add: MathFunc = (x:number,y:number):number=>x+y
+
