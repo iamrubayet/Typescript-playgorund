@@ -110,3 +110,38 @@ interface MathFunc()
 
 const add: MathFunc = (x:number,y:number):number=>x+y
 
+
+
+
+//classes with interface
+
+
+interface PersonInterface{
+	id :number
+	name: string
+	register():string
+
+}
+
+
+//classes
+
+
+class Person implements PersonInterface{
+	id:number
+	name:string
+
+	constructor(id:number,name:string){
+		this.id = id
+		this.name = name
+
+	}
+
+	register(){
+		return `{this.name} is registered`
+	}
+}
+
+
+const brad = new Person(1,'brad')
+
